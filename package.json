@@ -1,1 +1,14 @@
-
+{
+  "name": "no-api-auto-test-runner",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node src/runner.js",
+    "learn": "node src/runner.js --learn"
+  },
+  "dependencies": {
+    "glob": "^10.2.0",
+    "ajv": "^8.12.0",
+    "fs-extra": "^11.2.0"
+  }
+}
