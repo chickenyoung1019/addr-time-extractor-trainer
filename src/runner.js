@@ -1,9 +1,9 @@
 import fs from 'fs';
 import fse from 'fs-extra';
-import glob from 'glob';
+import { glob } from 'glob';
 import { runExtractExperimental } from './extractor_adapter.js';
 import { suggestPatchFromFailures } from './suggest_patch.js';
-import { applyPatch } from './apply_patch.js';
+import { applyPatch (} from './apply_patch.js';
 
 const LEARN = process.argv.includes('--learn');
 
