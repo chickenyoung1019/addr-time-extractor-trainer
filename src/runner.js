@@ -25,7 +25,9 @@ for(let epoch=0; epoch<5; epoch++){
   const fails = [];
   for(const c of cases){
     const got = runExtractExperimental(c.input, logic);
-    if(!eq(got, c.expected)) fails.push({ input: c.input, expected: c.expected, got });
+    if(!eq(got, c.expected)) {
+  console.log('FAIL:', c.name, 'expected:', c.expected, 'got:', got);
+  fails.push({ input: c.input, expected: c.expected, got });
   }
   console.log(`epoch ${epoch} fails: ${fails.length}`);
   if(!fails.length) break;
